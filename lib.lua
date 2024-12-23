@@ -391,7 +391,7 @@ function library.New(self, info, theme)
 
     local main_frame_title = utility:Draw("Text", v2new(3, 2), {
         Font = Drawing.Fonts.Plex,
-        Size = 13,
+        Size = 15,
         Outline = true,
         Color = Color3.new(1, 1, 1),
         Text = name,
@@ -485,7 +485,7 @@ function library.New(self, info, theme)
 
         local tab_frame_text = utility:Draw("Text", v2new(tab_frame.Size.X / 2, 2), {
             Font = Drawing.Fonts.Plex,
-            Size = 13,
+            Size = 15,
             Text = name,
             Color = Color3.new(1, 1, 1),
             Outline = true,
@@ -642,7 +642,7 @@ function library.New(self, info, theme)
 
             local section_title = utility:Draw("Text", v2new(9, -7), {
                 Font = Drawing.Fonts.Plex,
-                Size = 13,
+                Size = 15,
                 Color = Color3.new(1, 1, 1),
                 --Outline = true,
                 Text = name,
@@ -651,7 +651,7 @@ function library.New(self, info, theme)
 
             local section_title_bold = utility:Draw("Text", v2new(1, 0), {
                 Font = Drawing.Fonts.Plex,
-                Size = 13,
+                Size = 15,
                 Color = Color3.new(1, 1, 1),
                 Text = name,
                 Parent = section_title
@@ -772,7 +772,7 @@ function library.New(self, info, theme)
 
                 local keybind_title = utility:Draw("Text", offsets[2], {
                     Font = Drawing.Fonts.Plex,
-                    Size = 13,
+                    Size = 15,
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
                     Text = name,
@@ -799,7 +799,7 @@ function library.New(self, info, theme)
 
                 local keybind_value = utility:Draw("Text", v2new(keybind_frame.Size.X / 2, -1), {
                     Font = Drawing.Fonts.Plex,
-                    Size = 13,
+                    Size = 15,
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
                     Center = true,
@@ -893,7 +893,7 @@ function library.New(self, info, theme)
 
                         modes[i] = utility:Draw("Text", v2new(3, 2 + 14 * (i-1)), {
                             Font = Drawing.Fonts.Plex,
-                            Size = 13,
+                            Size = 15,
                             Color = self.mode == v:lower() and window.theme.accent or c3rgb(255, 255, 255),
                             Group = "accent",
                             Outline = true,
@@ -1042,7 +1042,7 @@ function library.New(self, info, theme)
 
                 local cptitle = utility:Draw("Text", offsets[2], {
                     Font = Drawing.Fonts.Plex,
-                    Size = 13,
+                    Size = 15,
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
                     Text = name,
@@ -1475,7 +1475,7 @@ function library.New(self, info, theme)
 
                 local button_title = utility:Draw("Text", v2new(button_frame.Size.X / 2, 2), {
                     Font = Drawing.Fonts.Plex,
-                    Size = 13,
+                    Size = 15,
                     Color = Color3.new(1, 1, 1),
                     Outline = true,
                     Center = true,
@@ -1542,7 +1542,7 @@ function library.New(self, info, theme)
 
                 local textbox_title = utility:Draw("Text", v2new(4, 2), {
                     Font = Drawing.Fonts.Plex,
-                    Size = 13,
+                    Size = 15,
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
                     Text = name,
@@ -1672,7 +1672,7 @@ function library.New(self, info, theme)
 
                 local toggle_title = utility:Draw("Text", v2new(13, -3), {
                     Font = Drawing.Fonts.Plex,
-                    Size = 13,
+                    Size = 15,
                     Color = Color3.new(1, 1, 1),
                     Outline = true,
                     Text = name,
@@ -1772,7 +1772,7 @@ function library.New(self, info, theme)
                 local slider_title = utility:Draw("Text", v2new(6, self:NextObjectPosition() + 3), {
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
-                    Size = 13,
+                    Size = 15,
                     Font = Drawing.Fonts.Plex,
                     Text = name,
                     Parent = section_frame
@@ -1781,7 +1781,7 @@ function library.New(self, info, theme)
                 local slider_pm = utility:Draw("Text", v2new(section_frame.Size.X-33, 0), {
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
-                    Size = 13,
+                    Size = 15,
                     Font = Drawing.Fonts.Plex,
                     Text = "- +",
                     Parent = slider_title
@@ -1818,7 +1818,7 @@ function library.New(self, info, theme)
                 local slider_value = utility:Draw("Text", v2new(slider_frame.Size.X / 2, -2), {
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
-                    Size = 13,
+                    Size = 15,
                     Font = Drawing.Fonts.Plex,
                     Text = tostring(def) .. "/" .. tostring(max) .. suf,
                     Center = true,
@@ -1938,7 +1938,7 @@ function library.New(self, info, theme)
                 local dropdown_title = utility:Draw("Text", v2new(6, self:NextObjectPosition() + 3), {
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
-                    Size = 13,
+                    Size = 15,
                     Font = Drawing.Fonts.Plex,
                     Text = name,
                     Parent = section_frame
@@ -1968,7 +1968,7 @@ function library.New(self, info, theme)
                 local dropdown_value = utility:Draw("Text", v2new(4, 2), {
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
-                    Size = 13,
+                    Size = 15,
                     Font = Drawing.Fonts.Plex,
                     Text = "shit vaLue",
                     Parent = dropdown_frame
@@ -2034,7 +2034,7 @@ function library.New(self, info, theme)
                         local option_text = utility:Draw("Text", v2new(4, 2+16*(i-1)), {
                             Color = (multi and table.find(self.value, v) or not multi and self.value == v) and window.theme.accent or c3rgb(255, 255, 255),
                             Outline = true,
-                            Size = 13,
+                            Size = 15,
                             Font = Drawing.Fonts.Plex,
                             Text = tostring(v),
                             Parent = list_frame,
@@ -2248,7 +2248,7 @@ function library.New(self, info, theme)
                 local list_title = utility:Draw("Text", v2new(6, self:NextObjectPosition()-2), {
                     Color = c3rgb(255, 255, 255),
                     Outline = true,
-                    Size = 13,
+                    Size = 15,
                     Font = Drawing.Fonts.Plex,
                     Text = name,
                     Parent = section_frame
@@ -2296,7 +2296,7 @@ function library.New(self, info, theme)
                         local list_option = utility:Draw("Text", v2new(3, (i-1)*14), {
                             Color = self.value == text and window.theme.accent or c3rgb(255, 255, 255),
                             Outline = true,
-                            Size = 13,
+                            Size = 15,
                             Font = Drawing.Fonts.Plex,
                             Text = self:fix_string(text),
                             Visible = i >= self.scroll[1] and i <= self.scroll[2],
@@ -2669,7 +2669,7 @@ function library.New(self, info, theme)
             local ntif_text = utility:Draw("Text", v2new(5, 2), {
                 Color = c3rgb(255, 255, 255),
                 Outline = true,
-                Size = 13,
+                Size = 15,
                 Font = Drawing.Fonts.Plex,
                 Text = ntif.text,
                 Parent = ntif_frame
@@ -2699,7 +2699,7 @@ function library.New(self, info, theme)
                     local ntif_high = utility:Draw("Text", v2new((s-1)*7, 0), {
                         Color = v[2],
                         Outline = true,
-                        Size = 13,
+                        Size = 15,
                         Font = Drawing.Fonts.Plex,
                         Text = ntif.text:sub(s, e),
                         Parent = ntif_text
@@ -2824,7 +2824,7 @@ function library.New(self, info, theme)
         local kblist_title = utility:Draw("Text", v2new(3, 3), {
             Color = c3rgb(255, 255, 255),
             Outline = true,
-            Size = 13,
+            Size = 15,
             Font = Drawing.Fonts.Plex,
             Text = "keybinds",
             Parent = kblist_frame
@@ -2833,7 +2833,7 @@ function library.New(self, info, theme)
         local kblist_value = utility:Draw("Text", v2new(3, 17), {
             Color = c3rgb(255, 255, 255),
             Outline = true,
-            Size = 13,
+            Size = 15,
             Font = Drawing.Fonts.Plex,
             Text = "",
             Parent = kblist_frame
@@ -2923,7 +2923,7 @@ function library.New(self, info, theme)
         local watermark_title = utility:Draw("Text", v2new(3, 4), {
             Color = c3rgb(255, 255, 255),
             Outline = true,
-            Size = 13,
+            Size = 15,
             Font = Drawing.Fonts.Plex,
             Text = watermark.text,
             Parent = watermark_frame
@@ -3000,7 +3000,7 @@ function library.New(self, info, theme)
         local tt_text = utility:Draw("Text", v2new(5, 2), {
             Color = c3rgb(255, 255, 255),
             Outline = true,
-            Size = 13,
+            Size = 15,
             Font = Drawing.Fonts.Plex,
             Text = "",
             ZIndex = 102,
